@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./contact.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="nav__bar">
+        <div class="nav__bar__section1">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+        <div class="nav__bar__section2">
+            <img src="./Images/smaller-feather-300x134.png" alt="Logo">
+        </div>
+        <div class="nav__bar__section3">
+            <button id="signinbtn">Sign In</button>
+            <button id="signupbtn">Sign Up</button>
+        </div>
+    </div>
+
+    <!--sale__image-->
+    <div class="sale__image__two">
+        <img src="./Images/house interiro.jpg" alt="House Interier">
+    </div>
+    <div class="sale__image__two__content">
+        <h1>Contact</h1>
+        <br>
+        <p>If you have any inquiries or require assistance, our team of knowledgeable professionals is available to to
+            assist you. You can reach us through email at info@redcardinal.lk during our business hours from Monday to
+            Friday 9.00 a.m. to 5.00 p.m.</p>
+    </div>
+    <div class="sale__image__two__content__two">
+        <div class="sale__image__two__content__two__part__one">
+            <ul>
+                <li>
+                    <h1>Invest in your Future Today</h1>
+                </li>
+            </ul>
+            <p>Build your nest for future generations with Red Cardinal Property Investment.</p>
+            <ul id="new__list">
+                <li>Conducting thorough market research to identify attractive investment opportunities and potential
+                    risks.
+                </li>
+                <li>Developing relationships with key industry players, such as real estate agents, property developers,
+                    and financiers, to gain access to the best investment opportunities.
+                </li>
+                <li>Providing our clients with tailored investment strategies based on their individual goals and risk
+                    tolerance.
+                </li>
+                <li>Offering a range of services, including property acquisition, management, and development, to ensure
+                    our clients’ investments are well-managed and generate long-term returns.
+                </li>
+                <li>Providing our clients with regular updates on their investments and the wider property market to
+                    help them make informed decisions.
+                </li>
+            </ul>
+        </div>
+        <div class="sale__image__two__content__two__part__two">
+            <ul>
+                <li>
+                    <h1>Make an enquiry</h1>
+                </li>
+            </ul>
+            <br>
+            <p class="para">Red Cardinal Property Investment is committed to protecting and respecting your privacy, and we’ll only
+                use your personal information to administer your account and to provide the products and services you
+                requested from us. From time to time, we would like to contact you about our products and services, as
+                well as other content that may be of interest to you. If you consent to us contacting you for this
+                purpose, please tick below to say how you would like us to contact you</p>
+            <br>
+            <p class="para">You can unsubscribe from these communications at any time. For more information on how to unsubscribe,
+                our privacy practices, and how we are committed to protecting and respecting your privacy, please review
+                our Privacy Policy.</p>
+            <br>
+            <p class="para">By clicking submit below, you consent to allow Red Cardinal Property Investment to store and process the
+                personal information submitted above to provide you the content requested.</p>
+            <br>
+            <p class="para">I agree to receive other communications from Red Cardinal Property Investment.</p>
+            <br>
+            <form action="/submitEnquiry" method="post"
+                style="width: 90%; max-width: 600px; margin: 20px auto; padding: 20px; border-radius: 10px; background-color: #FFFFFF">
+                <div class="input-container">
+                    <div style="margin-bottom: 15px;">
+                        <label for="firstName"
+                            style="display: block; font-weight: bold; color: #333; padding-bottom: 10px">First
+                            name</label>
+                        <input type="text" id="firstName" name="firstName" required
+                            style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label for="lastName"
+                            style="display: block; font-weight: bold; color: #333; padding-bottom: 10px">Last
+                            name</label>
+                        <input type="text" id="lastName" name="lastName" required
+                            style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="email"
+                        style="display: block; font-weight: bold; color: #333; padding-bottom: 10px">Email</label>
+                    <input type="email" id="email" name="email" required
+                        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="phone"
+                        style="display: block; font-weight: bold; color: #333; padding-bottom: 10px">Phone
+                        number</label>
+                    <input type="tel" id="phone" name="phone" required
+                        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="message"
+                        style="display: block; font-weight: bold; color: #333; padding-bottom: 10px">Message</label>
+                    <textarea id="message" name="message" rows="4" required
+                        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+                </div>
+
+                <button type="submit"
+                    style="background-color: #CC0201; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="contact__information">
+        <ul>
+            <li>
+                <h1>Contact information</h1>
+            </li>
+        </ul>
+        <h2>Address</h2>
+        <p>29 Nawam Mawathe, kollupitiya</p>
+        <br>
+        <h2>Email</h2>
+        <p>info@redcardinal.lk</p>
+        <br>
+        <h2>Telephone</h2>
+        <p>+94 777 720 054</p>
+        <p>+94 777 035 554</p>
+    </div>
+
+
+
+    <!--footer__section__one-->
+    <div class="footer__section">
+        <div class="footer__section__one">
+            <h3>Quick Links</h3>
+            <a href="./index.html">Home</a> <br />
+            <a href="./about.html">About Us</a> <br />
+            <a href="./contact.html">Contact Us</a>
+        </div>
+        <div class="footer__section__one__social">
+            <h3>Stay Connected</h3>
+            <div class="footer__section__one__social__images">
+                <img src="./Images/facebook.png" alt="Facebook">
+                <img src="./Images/youtube.png" alt="Youtube">
+                <img src="./Images/instagram.png" alt="Instagram">
+                <img src="./Images/twitter.png" alt="Twitter">
+            </div>
+        </div>
+    </div>
+    <!--footer__section__two-->
+    <div class="footer__section__two">
+        <div class="footer__section__two__one">
+            <img src="./Images/phone-call.png" alt="Call">
+            <p>Call Us Now</p>
+            <p>+94 777 720 054</p>
+            <p>+94 777 035 554</p>
+        </div>
+        <div class="footer__section__two__one">
+            <img src="./Images/email.png" alt="Email">
+            <p>Email Us</p>
+            <p>sales@lankarealestate.lk</p>
+        </div>
+        <div class="footer__end">
+            <p>9 A.M. to 5 P.M. Monday-Friday (GMT +5:30)</p>
+            <p>&copy; 2002-2025 lankarealestate.lk</p>
+            <p>All Rights Reserved</p>
+        </div>
+        <div class="footer__end">
+            <p>DESIGN AND DEVELOPMENT:</p>
+            <p>Group 5</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
